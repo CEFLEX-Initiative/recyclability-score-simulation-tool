@@ -1,0 +1,5 @@
+output/*
+Rprof.out
+.Rapp.history
+.DS_Store
+.gitignore
