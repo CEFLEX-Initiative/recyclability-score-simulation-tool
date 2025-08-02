@@ -22,6 +22,7 @@ This tool was developed by CEFLEX, the Circular Economy for Flexible Packaging i
 - The tool currently does not consider separate components (i.e., a packaging unit containing one or multiple separate components cannot be assessed as one, the separate components can be assessed as separate packaging designs though)
 - While the tool allows to add integrated components, it does not yet differentiate them fully (e.g., separate DfR requirements for the print on a cap vs. requirements for print on the main body of the packaging unit are not yet differentiated).
 - Not every possible or existing expression found in DfR guideline tables can be expressed in the tool or its inputs at this time (e.g., if a DfR guidance table uses expressions such as 'only in combination with' or 'not in combination with', this logical connection cannot yet be expressed)
+- The tool cannot yet accept DfR table specifications that are group sums (e.g., maximum amount of all inks or coatings combined)
 - Minimum amount requirements for materials cannot currently be described in the Excel file for the DfR table but must be described in the scoring model
 - The tool cannot yet automatically assign recycling streams based on colour or opacity
 
