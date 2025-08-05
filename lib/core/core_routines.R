@@ -5,7 +5,7 @@ sanitize <- function(sampleset) {
     c(
       "MDOPE" = "PE", "BOPE" = "PE", "LLDPE" = "PE", "HDPE" = "PE", "LDPE" = "PE",
       "BOPP" = "PP", "OPP voided" = "PP", "OPP" = "PP", "CPP" = "PP",
-      "OPA" = "PA", "CPA" = "PA", "BOPA" = "PA",
+      "OPA" = "PA6 laminated", "CPA" = "PA6 laminated", "BOPA" = "PA6 laminated",
       "BOPET" = "PET", "OPET" = "PET"
     )
   ))
