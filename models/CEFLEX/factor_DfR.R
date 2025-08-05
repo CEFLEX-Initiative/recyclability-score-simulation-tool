@@ -17,12 +17,12 @@ function(tablefile, design) {
 
     if (dom < 80) {
       reds <- reds + 1
-      logger(sprintf("> Target material content of %i led to an additional red element being considered.\n", dom))
+      logger(sprintf("> Target material content of %s %% led to an additional red element being considered.\n", dom))
     }
 
     if (dom >= 80 & dom < 90) {
       yellows <- yellows + 1
-      logger(sprintf("> Target material content of %i led to an additional yellow element being considered.\n", dom))
+      logger(sprintf("> Target material content of %s %% led to an additional yellow element being considered.\n", dom))
     }
   }
 

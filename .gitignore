@@ -1,4 +1,5 @@
 output/*
+designs/CUSTOM*
 Rprof.out
 .Rapp.history
 .DS_Store
