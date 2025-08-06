@@ -44,6 +44,17 @@ is_dominantmaterial <- function(constituent, stream) {
     return(TRUE)
   }
 
+  # TODO: this is a tweak to also count the MAH in a PP-g-MAH or PP-g-MAH tie layer
+  if (stream == "PP" & constituent$material == "MAH") {
+    return(TRUE)
+  }
+
+  # TODO: this is a tweak to correctly assign 'predominant material' for mixedPO streams
+  if (stream == "mixedPO" & (constituent$material == "PE" | constituent$material == "PP")) {
+    return(TRUE)
+  }
+
+
   FALSE
 }
 
