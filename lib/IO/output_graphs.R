@@ -8,7 +8,10 @@ for (src in unique(assessment_outcomes$Source)) {
 
     outgrid2 <- mutate(outgrid2, `Grade` = factor(`Grade`, levels = c("A", "B", "C", "Not recyclable", "Cannot assess")))
 
-    p <- ggplot(outgrid2, aes(x = `Scoring system`, y = `Packaging name`, fill = `Grade`)) +
+    outgrid2 <- mutate(outgrid2, titl = paste("[", ID, "] ", `Packaging name`,sep=""))
+    outgrid2 <- mutate(outgrid2, ID = factor(ID))
+
+    p <- ggplot(outgrid2, aes(x = `Scoring system`, y = fct_rev(titl), fill = `Grade`)) +
       geom_tile(show.legend = TRUE) +
       geom_text(aes(label = ifelse(`Needs testing`, paste("Needs test (", Stream, ",", `# tests`, " element(s))", sep = ""), paste(round(Score, 1), "% (", Stream, ",Y:", `# yellow`, ",R:", `# red`, ")", sep = ""))), size = 2, colour = "white") +
       geom_text(aes(label = ifelse(is.na(Stream), "No stream", "")), size = 2, colour = "white") +

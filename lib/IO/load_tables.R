@@ -1,5 +1,7 @@
 # Read design tables from excel
 
+# FIXME: incomplete lines in the input, e.g., just filling the 'stream' column lead to undefined behaviour; need to check that each row of the table is syntactically correct
+
 recycling_streams <- NULL
 
 dfrtablescontents <- NULL
